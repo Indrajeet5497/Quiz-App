@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz-App</title>
+</head>
+<div id="container">
+    <div id="mai">
+        <!-- MAIN logo and some instruction -->
+
+        <div id="main">
+            <div><img src="./image/logo1.png" alt="something error" class="testbooklogo"></div>
+            <div class="hello">Hello Usser!</div>
+            <div class="Enter_name">Enter your name to continue the Quiz.</div>
+        </div>
+
+        <!-- Name and enter button -->
+        <form action="quiz_page.html" get="method">
+            <div class="name_button">
+                <input id="name" name="name" type="text" placeholder="ENTER YOUR NAME..." required>
+                <input id="enter" type="submit" onclick="alertRequire()" value="ENTER">
+            </div>
+            <div class="warning">
+                <div class="seconds">You'll have 10 seconds to answer each questions</div><hr>
+            </div>
+            <div class="catg">
+                <div class="select_catg">Select Category</div>
+            </div>
+
+            <!-- Select Category -->
+
+            <div class="categories">
+                <div><input type="radio" name="categories" id="pipes" value="pipes" required>
+                    <label for="pipes">Pipes and Cisternes</label></div>
+                <div><input type="radio" name="categories" id="probability" value="probability" required>
+                    <label for="probability">Probability</label></div>
+                <div><input type="radio" name="categories" id="problems" value="problems" required>
+                    <label for="problems">Problems On Ages</label></div>
+                <div><input type="radio" name="categories" id="profit" value="profit" required>
+                    <label for="profit">Profit and Loss</label></div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
